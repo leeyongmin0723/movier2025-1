@@ -1,13 +1,14 @@
 import numpy as np
 import pandas as pd
+import joblib
 from scipy.sparse import coo_matrix
 from implicit.als import AlternatingLeastSquares
-import joblib
+
 
 
 data_fname = "/Users/leeyongmin/PycharmProjects/movier2025-1/app/data/ratings.csv"
-item_fname = "data/movies_final.csv"
-saved_model_fname = "data/finalized_model.sav"
+item_fname = "/Users/leeyongmin/PycharmProjects/movier2025-1/app/data/movies_final.csv"
+saved_model_fname = "/Users/leeyongmin/PycharmProjects/movier2025-1/app/data/finalized_model.sav"
 weight = 10
 
 def model_train():
