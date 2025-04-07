@@ -19,6 +19,29 @@
     <h1> 이용민의 첫 영화추천 서비스</h1>
     </div>
     <h2>오늘의 영화추천</h2>
-    <h2>장르별 추천</h2>
+    
+    <div id="alldiv"; style="column-count: 5;"></div>
+    <br>    
+    <h2>장르별 추천 </h2>
+    <select name="" id="sgenre">
+        <option value="comedy">코메디</option>
+        <option value="Adventure">모험물</option>
+        <option value="thriller">스릴러</option>
+        <option value="children">어린이</option>
+        <option value="Horror">공포물</option>
+        <option value="war">전쟁</option>
+        <option value="sci-fi">공상과학</option>
+        <option value="western">서부영화</option>
+        <option value="drama" selected>드라마</option>
+        
+    </select>
+    <button type="button" class="btn bg-primary btn-lg"
+        onclick="MovieObject.getgenres()">장르선택</button>
+        <div id="genrediv"; style="column-count: 5;"></div>
+
+    <h2>영화기반 추천</h2>
+    <div id="itemdiv"; style="column-count: 5;"></div>
+    <h2>사용자기반 추천</h2>
+    <div id="userdiv"; style="column-count: 5;"></div>
     </body>
     </html>
